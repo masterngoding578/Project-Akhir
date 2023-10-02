@@ -1,0 +1,864 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+body {
+  height: 1000px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.banner {
+  width: 100%;
+  position: relative;
+}
+.wrapper {
+  background-color: rgb(249, 193, 11);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+}
+i {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.wrapper :nth-child(2) {
+  padding: 20px;
+}
+
+.waktu {
+  color: white;
+  padding-right: 12px;
+}
+.telfon {
+  padding-right: 10px;
+  padding-left: 15px;
+}
+.nomor {
+  padding-right: 5px;
+  color: white;
+}
+
+.jam {
+  display: flex;
+  padding-left: 20px;
+}
+.icon {
+  display: flex;
+  margin-left: 630px;
+}
+.icon .bi-facebook {
+  background-color: #fafafa;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.icon .bi-pinterest {
+  background-color: #fafafa;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.icon .wa {
+  display: flex;
+  margin-left: 18px;
+}
+.icon .ig {
+  display: flex;
+}
+.icon .bi-instagram {
+  background-color: #fafafa;
+  width: 20px;
+  border-radius: 30%;
+  height: 20px;
+}
+.icon .bi-whatsapp {
+  background-color: #fafafa;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  margin-top: 20px;
+}
+.nav {
+  background-color: white;
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 9;
+  top: 30px;
+}
+.nav .navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1px;
+  color: rgb(18, 18, 17);
+}
+.nav .navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px;
+}
+@media screen and (max-width: 560px) {
+  .nav .navbar-menu a {
+    display: none;
+  }
+}
+
+.nav .navbar-menu a {
+  text-decoration: none;
+  color: rgb(113, 114, 117);
+  font-size: 17px;
+  font-weight: 400;
+  margin: 4px 17px;
+  text-transform: capitalize;
+  font-family: "DM Sans", sans-serif;
+}
+.nav .navbar-menu a:hover {
+  color: crimson;
+}
+.nav .navbar-menu span {
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  padding: 6px 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: "DM Sans", sans-serif;
+}
+
+.firstname {
+  color: rgb(241, 217, 7);
+  font-weight: 700;
+  display: flex;
+  font-weight: 700;
+}
+.lastname {
+  color: red;
+  padding-left: 4px;
+  font-weight: 700;
+  display: flex;
+  font-family: "DM Sans", sans-serif;
+}
+#home {
+  width: 100%;
+  filter: brightness(50%);
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+#about {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #fafafa;
+  height: 100vh;
+}
+/* about start */
+.containerr {
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 10px;
+  height: 500px;
+}
+.bagian-kiri {
+  width: 45%;
+  position: relative;
+  margin-top: 5px;
+}
+
+.bagian-kiri h1 {
+  position: absolute;
+  top: 420px;
+  color: #fafafa;
+  font-size: 20px;
+  left: 80px;
+}
+.bagian-kiri p {
+  position: absolute;
+  bottom: 13px;
+  color: #fafafa;
+  left: 80px;
+}
+
+.bagian-kanan {
+  width: 45%;
+}
+.bagian-kanan .kanan-atas {
+  width: 100%;
+  padding: 10px 20px 2px;
+  background-color: #fafafa;
+  border-radius: 20px;
+  margin-top: 17px;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;
+}
+
+.bagian-kiri img {
+  width: 100%;
+  border-radius: 20px;
+  height: 530px;
+  margin-top: 25px;
+  margin-left: 70px;
+}
+.kanan-atas h1 {
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  margin-top: -20px;
+}
+.kanan-atas h3 {
+  font-weight: bold;
+  color: black;
+  text-transform: capitalize;
+}
+span {
+  color: gold;
+}
+.kanan-atas p {
+  color: black;
+  font-weight: 600;
+}
+.wadah {
+  display: flex;
+  width: 100%;
+  margin-top: 16px;
+  justify-content: space-between;
+}
+.merah {
+  width: 45%;
+  height: 100px;
+  background-color: crimson;
+  border-radius: 10px;
+}
+.kuning {
+  width: 45%;
+  height: 100px;
+  background-color: gold;
+  border-radius: 10px;
+}
+.merah {
+  padding: 15px;
+  color: #fafafa;
+}
+.merah h1 {
+  margin-bottom: 18px;
+  white-space: nowrap;
+  width: 80%;
+  font-size: 15px;
+}
+.merah button {
+  width: 60px;
+  background-color: gold;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 30px;
+}
+.kuning {
+  padding: 15px;
+  color: #fafafa;
+}
+.kuning h1 {
+  margin-bottom: 10px;
+  white-space: nowrap;
+  width: 80%;
+  font-size: 15px;
+}
+.kuning p {
+  font-size: 10px;
+}
+/* about end */
+/* service start */
+#service {
+  height: 100vh;
+}
+.services {
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  height: 700px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.services h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.services h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.carousel-item {
+  width: 100%;
+}
+
+.container-service {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-bottom: 200px;
+}
+.kiri {
+  width: 40%;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.kanan {
+  width: 55%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.kanan img {
+  margin-top: 50px;
+  width: 480px;
+  height: 260px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.kanan h1 {
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.kanan p {
+  padding-left: 2px;
+}
+
+.kotak1 {
+  width: 420px;
+  height: 120px;
+  border-left: 5px solid rgb(240, 10, 10);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;
+}
+.kotak1 h2 {
+  color: rgb(254, 217, 3);
+  padding-left: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.kotak1 p {
+  font-size: 15px;
+  padding-left: 15px;
+  margin-top: -5px;
+}
+.kotak2 {
+  width: 420px;
+  height: 120px;
+  border-left: 5px solid rgb(192, 190, 190);
+}
+.kotak2 h2 {
+  color: rgb(254, 217, 3);
+  padding-left: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.kotak2 p {
+  font-size: 15px;
+  padding-left: 15px;
+  margin-top: -5px;
+}
+.kotak3 {
+  width: 420px;
+  height: 120px;
+  border-left: 5px solid rgb(192, 190, 190);
+}
+.kotak3 h2 {
+  color: rgb(254, 217, 3);
+  padding-left: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.kotak3 p {
+  font-size: 15px;
+  padding-left: 15px;
+  margin-top: -5px;
+}
+#about {
+  margin-bottom: 100px;
+}
+/* about end */
+/* product start */
+.products {
+  background-color: #fafafa;
+  height: 105vh;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+}
+.container-products {
+  width: 85%;
+  margin-left: 80px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 550px;
+}
+.product1 {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  margin-left: 20px;
+  position: relative;
+}
+.product1 h1 {
+  position: absolute;
+  top: 255px;
+  left: 15px;
+  color: #fafafa;
+  font-size: 25px;
+  font-weight: 600;
+}
+.swap {
+  display: flex;
+  color: #fafafa;
+}
+.bi-arrow-right {
+  font-size: 30px;
+}
+.product1 p {
+  position: absolute;
+  top: 230px;
+  left: 15px;
+  font-weight: 600;
+}
+.product2 p {
+  position: absolute;
+  top: 230px;
+  left: 15px;
+  font-weight: 600;
+}
+.product3 p {
+  position: absolute;
+  top: 230px;
+  font-weight: 600;
+  left: 15px;
+}
+.product1 .swap .bi-arrow-right {
+  background-color: crimson;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  position: absolute;
+  top: 250px;
+  left: 235px;
+}
+.product2 h1 {
+  position: absolute;
+  top: 255px;
+  left: 15px;
+  color: #fafafa;
+  font-size: 25px;
+  font-weight: 600;
+}
+.product2 .swap .bi-arrow-right {
+  background-color: crimson;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  position: absolute;
+  top: 250px;
+  left: 235px;
+}
+.product3 h1 {
+  position: absolute;
+  top: 255px;
+  left: 15px;
+  color: #fafafa;
+  font-size: 25px;
+  font-weight: 600;
+}
+.product3 .swap .bi-arrow-right {
+  background-color: crimson;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  position: absolute;
+  top: 250px;
+  left: 235px;
+}
+.product4 p {
+  position: absolute;
+  top: 175px;
+  left: 17px;
+  font-weight: 600;
+}
+.product4 h1 {
+  position: absolute;
+  top: 200px;
+  left: 15px;
+  color: #fafafa;
+  font-size: 25px;
+  font-weight: 600;
+}
+.product4 .swap .bi-arrow-right {
+  background-color: crimson;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  position: absolute;
+  top: 190px;
+  left: 570px;
+}
+.product5 p {
+  position: absolute;
+  top: 180px;
+  left: 15px;
+  font-weight: 600;
+}
+.product5 h1 {
+  position: absolute;
+  top: 200px;
+  left: 15px;
+  color: #fafafa;
+  font-size: 25px;
+  font-weight: 600;
+}
+.product5 .swap .bi-arrow-right {
+  background-color: crimson;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  position: absolute;
+  top: 190px;
+  left: 235px;
+}
+
+.product1 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+.product2 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+.product3 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+.product4 img {
+  width: 633px;
+  height: 240px;
+  border-radius: 20px;
+}
+.product5 img {
+  width: 300px;
+  height: 240px;
+  border-radius: 20px;
+}
+.product2 {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+}
+
+.product3 {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+}
+.product4 {
+  width: 633px;
+  height: 200px;
+  margin: 10px;
+  position: relative;
+}
+.product5 {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  position: relative;
+}
+/* product end */
+/* contact start */
+#contact {
+  height: 100vh;
+}
+#wave {
+  margin-top: -60px;
+  height: 70vh;
+}
+.background {
+  background-color: #f3ad00;
+  width: 100%;
+  height: 43vh;
+}
+.container-contact {
+  /* position: relative; */
+  display: flex;
+  width: 90%;
+  position: relative;
+  justify-content: space-between;
+  top: -100px;
+  margin: 0 auto;
+}
+
+.letak-kiri {
+  width: 47%;
+  margin-top: -70px;
+}
+.letak-kiri h1 {
+  font-weight: 700;
+  font-size: 42px;
+  font-family: "DM Sans", sans-serif;
+  margin-top: -19px;
+  margin-bottom: 25px;
+}
+.letak-kiri p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.letak-kanan {
+  background-color: aliceblue;
+  width: 39%;
+  height: 390px;
+  margin-top: -120px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.176) 0px 48px 48px 0px;
+}
+.maps iframe {
+  width: 100%;
+  height: 230px;
+  border-radius: 20px;
+}
+.maps {
+  background-color: red;
+  width: 93%;
+  height: 200px;
+  border-radius: 20px;
+  margin: 120px 12px 30px;
+}
+.atas-map {
+  width: 90%;
+  height: 130px;
+  margin-bottom: -130px;
+  margin-top: 30px;
+}
+.atas-map h1 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 20px;
+  font-family: poppins;
+  margin-bottom: 20px;
+}
+.tengah-map {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: -10px;
+}
+.tengah-map .bi-telephone {
+  color: #f3ad00;
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.tengah-map2 .bi-envelope-fill {
+  color: #f3ad00;
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.tengah-map2 {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.tengah-map h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: grey;
+}
+.tengah-map2 h2 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: grey;
+}
+
+.kotak-contact {
+  width: 500px;
+  left: 30px;
+  position: absolute;
+  top: -200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+textarea {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+  height: 200px;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+}
+.contact-nama {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+::placeholder {
+  color: black;
+}
+input {
+  width: 47%;
+  padding: 10px;
+  margin: 30px;
+  margin-right: 10px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  font-style: normal;
+}
+.submit {
+  background-color: red;
+  width: 490px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 30px;
+  border: none;
+  color: #fafafa;
+}
+
+.kotak-putih {
+  border: 1px solid black;
+}
+.container-footer {
+  width: 90%;
+  height: 100px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+}
+.copy2 {
+  width: 30%;
+  display: flex;
+  margin-left: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+.copy3 {
+  width: 50%;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  font-weight: 700;
+}
+
+.copy {
+  width: 30%;
+  display: flex;
+  color: #fafafa;
+  margin-right: -170px;
+  justify-content: center;
+  height: 30px;
+  font-weight: 700;
+}
+.copy p,
+.copy3 p {
+  margin-top: 4px;
+}
+.copy2 .bi-facebook {
+  background-color: #fafafa;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  margin-right: 12px;
+}
+.copy2 .bi-pinterest {
+  background-color: #fafafa;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  margin-right: 12px;
+}
+.copy2 .bi-instagram {
+  background-color: #fafafa;
+  width: 20px;
+  border-radius: 30%;
+  height: 20px;
+  margin-right: 12px;
+}
+.copy2 .bi-youtube {
+  background-color: #fafafa;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  margin-right: 12px;
+}
+
+footer {
+  background-color: #f3ad00;
+  height: 100px;
+  width: 100%;
+}
